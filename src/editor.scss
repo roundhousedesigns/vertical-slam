@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-rhd-vertical-slam {
+	padding: 0.6em;
+
+	.vertical-slam-text {
+		writing-mode: horizontal-tb !important;
+		font-size: 1em;
+	}
+
+	label {
+		font-weight: bold;
+		color: white;
+		font-size: 1.2rem;
+	}
+
+	input {
+		&[type="text"] {
+			font-size: 2em;
+		}
+	}
+
+	&.is-selected {
+		background: darkgray;
+
+		label,
+		.instructions {
+			color: black;
+		}
+	}
+
+	&:not(.is-selected) {
+		background: gray;
+
+		label {
+			color: white;
+		}
+	}
+
+	input {
+		&[type="text"] {
+			color: red;
+			font-weight: 900;
+		}
+	}
+
+	.instructions {
+		font-size: 80%;
+		padding-left: 0.25em;
+		font-style: italic;
+	}
+}
