@@ -24,15 +24,12 @@
 		overflow: hidden;
 		display: flex;
 		top: 0;
-		justify-content: flex-end;
-		right: 0;
 		z-index: 2;
 
 		.vertical-slam-text {
 			font-size: 17vw;
 			writing-mode: vertical-lr;
 			position: relative;
-			left: 5vw;
 			top: 4px;
 		}
 
@@ -40,6 +37,25 @@
 			transform: translateX(
 				calc(-1 * var(--wp--custom--size--navigation) * 0.85)
 			);
+		}
+
+		// Default (stick right)
+		&:not(.is-style-stick-left) {
+			right: 0;
+			justify-content: flex-end;
+
+			.vertical-slam-text {
+				left: 5vw;
+			}
+		}
+
+		&.is-style-stick-left {
+			left: 0;
+			justify-content: flex-start;
+
+			.vertical-slam-text {
+				right: 5vw;
+			}
 		}
 	}
 }

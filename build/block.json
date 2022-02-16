@@ -3,21 +3,17 @@
 	"apiVersion": 2,
 	"name": "rhd/vertical-slam",
 	"version": "0.1.0",
-	"title": "Vertical Slam",
+	"title": "Vertical Slam!",
 	"category": "layout",
 	"icon": "star-half",
-	"description": "Large vertical slam headings!",
+	"description": "A WordPress block for large vertical slam headings!",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "vertical-slam",
+	"textdomain": "rhd",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"styles": [
-		{ "name": "stick-page", "label": "Stick to page" },
-		{ "name": "stick-content", "label": "Stick to content (below cover image)", "isDefault": true }
-	],
 	"attributes": {
 		"text": {
 			"type": "string",
@@ -25,5 +21,9 @@
 			"selector": "div",
 			"default": ""
 		}
-	}
+	},
+	"styles": [
+		{ "name": "stick-left", "label": "Stick Left" },
+		{ "name": "stick-right", "label": "Stick Right", "isDefault": true }
+	]
 }

@@ -1,1 +1,48 @@
-.wp-block-rhd-vertical-slam{padding:.6em}.wp-block-rhd-vertical-slam .vertical-slam-text{font-size:1em;-ms-writing-mode:lr-tb!important;writing-mode:horizontal-tb!important}.wp-block-rhd-vertical-slam label{color:#fff;font-size:1.2rem;font-weight:700}.wp-block-rhd-vertical-slam input[type=text]{font-size:2em}.wp-block-rhd-vertical-slam.is-selected{background:#a9a9a9}.wp-block-rhd-vertical-slam.is-selected .instructions,.wp-block-rhd-vertical-slam.is-selected label{color:#000}.wp-block-rhd-vertical-slam:not(.is-selected){background:gray}.wp-block-rhd-vertical-slam:not(.is-selected) label{color:#fff}.wp-block-rhd-vertical-slam input[type=text]{color:red;font-weight:900}.wp-block-rhd-vertical-slam .instructions{font-size:80%;font-style:italic;padding-left:.25em}
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-rhd-vertical-slam {
+  padding: 0.6em;
+}
+.wp-block-rhd-vertical-slam .vertical-slam-text {
+  -ms-writing-mode: lr-tb !important;
+      writing-mode: horizontal-tb !important;
+  font-size: 1em;
+}
+.wp-block-rhd-vertical-slam label {
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+.wp-block-rhd-vertical-slam input[type=text] {
+  font-size: 2em;
+}
+.wp-block-rhd-vertical-slam.is-selected {
+  background: darkgray;
+}
+.wp-block-rhd-vertical-slam.is-selected label,
+.wp-block-rhd-vertical-slam.is-selected .instructions {
+  color: black;
+}
+.wp-block-rhd-vertical-slam:not(.is-selected) {
+  background: gray;
+}
+.wp-block-rhd-vertical-slam:not(.is-selected) label {
+  color: white;
+}
+.wp-block-rhd-vertical-slam input[type=text] {
+  color: red;
+  font-weight: 900;
+}
+.wp-block-rhd-vertical-slam .instructions {
+  font-size: 80%;
+  padding-left: 0.25em;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=index.css.map*/

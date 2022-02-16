@@ -41,7 +41,7 @@ export default function Edit({ attributes, setAttributes, isSelected, children }
 		<div {...useBlockProps()}>
 			<span className="vertical-slam-text">
 				<TextControl
-					label={__("Vertical Slam", "rhd")}
+					label={__("Vertical Slam!", "rhd")}
 					value={text}
 					onChange={(value) => setAttributes({ text: value })}
 				/>
