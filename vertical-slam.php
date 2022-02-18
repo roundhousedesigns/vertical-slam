@@ -13,6 +13,8 @@
  * @package           rhd
  */
 
+define( 'RHD_VERTICAL_SLAM_VERSION', '0.1.0' );
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -24,3 +26,13 @@ function rhd_vertical_slam_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'rhd_vertical_slam_block_init' );
+
+/**
+ * Enqueues scripts and styles.
+ *
+ * @return void
+ */
+function rhd_vertical_slam_block_enqueue() {
+	wp_enqueue_script( 'vertical-slam-frontent', plugin_dir_url( __FILE__ ) . '/frontend.js', array(), RHD_VERTICAL_SLAM_VERSION, true );
+}
+add_action( 'wp_enqueue_scripts', 'rhd_vertical_slam_block_enqueue' );
